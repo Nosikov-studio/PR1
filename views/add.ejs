@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/css/style.css"
+    <title>Добавить контрагентов</title>
+</head>
+<body>
+
+    <%- include('blocks/menu.ejs') %>
+
+    <h1>Добавить контрагента</h1>
+    <form method="post" action="/add">
+        <input name="id" type="text" placeholder="идентификатор"><br>
+        <input name="number" type="text" placeholder="номер телефона"><br>
+        <input name="email" type="text" placeholder="эмэйл"><br>
+        <input name="website" type="text" placeholder="вебсайт"><br>
+        <input name="owner" type="text" placeholder="контрагент"><br>
+        <input name="privacy" type="text" placeholder="приватность"><br>
+        <input name="city" type="text" placeholder="город"><br>
+        <textarea name="comment" cols="30" rows="5" placeholder=" коммент..."></textarea><br>
+        <button type="submit">Добавить</button>
+    </form>
+    
+</body>
+</html>

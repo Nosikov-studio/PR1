@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/css/style.css"
+    <title>Список контрагентов</title>
+</head>
+<body>
+
+    <%- include('blocks/menu.ejs') %>
+
+    <h1>Список контрагентов</h1>
+
+    <%= data[2]['website'] %>
+    <hr/>
+    
+    <% data.forEach( (el)=> { %>
+
+        <li> <%= el['id'] %> </li>
+        <li> <%= el['owner'] %> </li>
+        <li> <%= el['website'] %> </li>
+        <div> ************ </div>
+    <% }) %>
+    <hr/>
+
+    <table>
+        <tr>
+            <td> id </td>
+            <td> number </td>
+            <td> email </td>
+            <td> website </td>
+            <td> owner </td>
+            <td> privacy </td>
+            <td> city </td>
+            <td> comment </td>
+        </tr>
+        
+            <% data.forEach( (el)=> { %>
+                <tr>
+                <td> <%= el['id'] %> </td>
+                <td> <%= el['number'] %> </td>
+                <td> <%= el['email'] %> </td>
+                <td> <%= el['website'] %> </td>
+                <td> <%= el['owner'] %> </td>
+                <td> <%= el['privacy'] %> </td>
+                <td> <%= el['city'] %> </td>
+                <td> <%= el['comment'] %> </td>
+                </tr>
+            <% }) %>
+  
+    </table>
+    
+</body>
+</html>
