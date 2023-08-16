@@ -4,4 +4,5 @@ u2 backand Express - детали (ID, query - строки и т.д.)
 u3 backand (CORS) - frontend (нативный JS, fetch) - примитивный пример
 ------------------------------------------------------------------------
 ---14.08.2023
-u4 
+u4 backend - MongoDB -> MongoClient, CRUD -операции
+u5 promise, ассинхронные функции
