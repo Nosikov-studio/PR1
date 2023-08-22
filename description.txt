@@ -6,3 +6,5 @@ u3 backand (CORS) - frontend (нативный JS, fetch) - примитивны
 ---14.08.2023
 u4 backend - MongoDB -> MongoClient, CRUD -операции
 u5 promise, ассинхронные функции
+u6 backend - MongoDB -> mongoose - "Первая проба" 
+u7 backend - MongoDB -> mongoose - a) через коллбэки b) через промисы c) через асинхр. функции

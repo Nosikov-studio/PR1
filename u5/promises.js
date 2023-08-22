@@ -63,8 +63,11 @@ getData1()
 
 const getData2 = async () => {
     console.log(await pr3); 
-    console.log((await pr3).name);              //!!!!!!!!
+    console.log((await pr3).name);
+    console.log('++++++++++++++++++')              //!!!!!!!!
     return 'done'
     }
     
-getData2()
+//getData2()
+//console.log('***********************');
+getData2().then(fata => console.log(fata+"3333"));
